@@ -25,3 +25,5 @@ sudo nginx -t
 sudo systemctl restart nginx
 sudo tail -f /var/log/nginx/access.log
 sudo tail -20 /var/log/nginx/error.log
+
+
