@@ -20,6 +20,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Print GitHub Context
+        run: |
+        echo "Repository=${{ github.repository }}"
+        echo "Ref=${{ github.ref }}"
 
       - name: Print role ARN
         run: echo "${{ secrets.AWS_ROLE_ARN }}"
